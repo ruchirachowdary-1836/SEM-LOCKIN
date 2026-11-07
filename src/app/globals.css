@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #f8f7f2;
+  --bg-soft: #f1efe7;
+  --card: #ffffff;
+  --ink: #30342f;
+  --muted: #898d83;
+  --line: #e7e5dc;
+  --sage: #a8b5a0;
+  --sage-soft: #e7ece3;
+  --olive: #75856b;
+  --olive-ink: #5b6a52;
+  --rose: #d8b9b2;
+  --rose-soft: #f5ebe8;
+  --rose-ink: #9c6a60;
+  --amber-soft: #f6efdf;
+  --amber-ink: #8a6d2f;
+  --shadow: 0 1px 2px rgba(48, 52, 47, 0.04), 0 8px 24px -12px rgba(48, 52, 47, 0.12);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #1b1d1a;
+  --bg-soft: #22251f;
+  --card: #262923;
+  --ink: #ecebe4;
+  --muted: #9da196;
+  --line: #363a33;
+  --sage: #9aaa91;
+  --sage-soft: #2f362c;
+  --olive: #a3b497;
+  --olive-ink: #b9c8ae;
+  --rose: #c9a199;
+  --rose-soft: #3a2f2c;
+  --rose-ink: #e0b8af;
+  --amber-soft: #3a3324;
+  --amber-ink: #dcc28a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px -14px rgba(0, 0, 0, 0.55);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-soft: var(--bg-soft);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+  --color-olive: var(--olive);
+  --color-olive-ink: var(--olive-ink);
+  --color-rose: var(--rose);
+  --color-rose-soft: var(--rose-soft);
+  --color-rose-ink: var(--rose-ink);
+  --color-amber-soft: var(--amber-soft);
+  --color-amber-ink: var(--amber-ink);
+  --font-serif: var(--font-playfair), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-dm), "Inter", system-ui, sans-serif;
+  --shadow-soft: var(--shadow);
+}
+
+@layer base {
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+::selection {
+  background: var(--rose);
+  color: #30342f;
+}
+
+/* Thin, quiet scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.lift:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in oklab, var(--sage) 60%, var(--line));
+}
+
+.fade-in {
+  animation: fadeIn 0.45s ease both;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.pulse-dot {
+  animation: pulseDot 2s ease-in-out infinite;
+}
+@keyframes pulseDot {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--rose) 70%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px transparent;
+  }
+}
+
+/* Subtle paper dot-grid used behind the hero */
+.dot-grid {
+  background-image: radial-gradient(color-mix(in oklab, var(--olive) 22%, transparent) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+.field {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 0.55rem 0.8rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.field:focus {
+  border-color: var(--sage);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--sage) 30%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+}
+
+/* Print: only the printable region, on plain white */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #222 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .break-avoid {
+    break-inside: avoid;
+  }
+}
