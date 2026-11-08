@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="60" viewBox="0 0 760 60" role="img" aria-label="Plan every day of the exam fortnight. Track 6 subjects × 5 units, stage by stage. Focus in 50/10 and 90/15 deep-work blocks. Count down to every paper, live.">
+<style>.serif{font-family:'Playfair Display',Georgia,'Times New Roman',serif}
+.sans{font-family:'DM Sans',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+@keyframes blink{50%{opacity:.2}}
+.cur{animation:blink 1.4s ease-in-out infinite}
+@keyframes s0{0%,21.88%{opacity:1}22.48%,99.4%{opacity:0}100%{opacity:1}}
+@keyframes w0{0%,0.00%{transform:translateX(-464px)}10.00%,100%{transform:translateX(0)}}
+@keyframes s1{0%,25.00%{opacity:0}25.01%,46.88%{opacity:1}47.48%,100%{opacity:0}}
+@keyframes w1{0%,25.00%{transform:translateX(-536px)}35.00%,100%{transform:translateX(0)}}
+@keyframes s2{0%,50.00%{opacity:0}50.01%,71.88%{opacity:1}72.47%,100%{opacity:0}}
+@keyframes w2{0%,50.00%{transform:translateX(-524px)}60.00%,100%{transform:translateX(0)}}
+@keyframes s3{0%,75.00%{opacity:0}75.01%,96.88%{opacity:1}97.47%,100%{opacity:0}}
+@keyframes w3{0%,75.00%{transform:translateX(-404px)}85.00%,100%{transform:translateX(0)}}
+</style>
+<defs><clipPath id="k0"><rect x="0" y="0" width="464" height="60" style="animation:w0 16.0s steps(37) infinite"/></clipPath><clipPath id="k1"><rect x="0" y="0" width="536" height="60" style="animation:w1 16.0s steps(43) infinite"/></clipPath><clipPath id="k2"><rect x="0" y="0" width="524" height="60" style="animation:w2 16.0s steps(42) infinite"/></clipPath><clipPath id="k3"><rect x="0" y="0" width="404" height="60" style="animation:w3 16.0s steps(32) infinite"/></clipPath></defs>
+<circle cx="14" cy="31" r="5" fill="#75856b" class="cur"/><g transform="translate(34 0)"><g style="animation:s0 16.0s linear infinite">
+  <g clip-path="url(#k0)"><text x="0" y="38" class="sans" font-size="21" fill="#30342f">Plan every day of the exam fortnight.</text>
+  </g>
+</g><g style="opacity:0;animation:s1 16.0s linear infinite">
+  <g clip-path="url(#k1)"><text x="0" y="38" class="sans" font-size="21" fill="#30342f">Track 6 subjects × 5 units, stage by stage.</text>
+  </g>
+</g><g style="opacity:0;animation:s2 16.0s linear infinite">
+  <g clip-path="url(#k2)"><text x="0" y="38" class="sans" font-size="21" fill="#30342f">Focus in 50/10 and 90/15 deep-work blocks.</text>
+  </g>
+</g><g style="opacity:0;animation:s3 16.0s linear infinite">
+  <g clip-path="url(#k3)"><text x="0" y="38" class="sans" font-size="21" fill="#30342f">Count down to every paper, live.</text>
+  </g>
+</g></g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="28" viewBox="0 0 1200 28" role="presentation">
+<style>@keyframes run{from{transform:translateX(0)}to{transform:translateX(1080px)}}
+@keyframes dash{to{stroke-dashoffset:-40}}
+.r{animation:run 7s cubic-bezier(.45,0,.55,1) infinite alternate}
+.d{animation:dash 2s linear infinite}</style>
+<path class="d" d="M60 14H1140" stroke="#363a33" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+<g class="r"><circle cx="60" cy="14" r="9" fill="#2f362c"/><circle cx="60" cy="14" r="4.5" fill="#a3b497"/></g>
+<circle cx="600" cy="14" r="3.5" fill="#c9a199"/>
+</svg>

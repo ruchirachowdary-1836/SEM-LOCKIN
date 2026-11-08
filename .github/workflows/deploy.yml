@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "README.md"
+      - ".github/assets/**"
   workflow_dispatch:
 
 permissions:
