@@ -13,7 +13,7 @@
 @keyframes w3{0%,75.00%{transform:translateX(-404px)}85.00%,100%{transform:translateX(0)}}
 </style>
 <defs><clipPath id="k0"><rect x="0" y="0" width="464" height="60" style="animation:w0 16.0s steps(37) infinite"/></clipPath><clipPath id="k1"><rect x="0" y="0" width="536" height="60" style="animation:w1 16.0s steps(43) infinite"/></clipPath><clipPath id="k2"><rect x="0" y="0" width="524" height="60" style="animation:w2 16.0s steps(42) infinite"/></clipPath><clipPath id="k3"><rect x="0" y="0" width="404" height="60" style="animation:w3 16.0s steps(32) infinite"/></clipPath></defs>
-<circle cx="14" cy="31" r="5" fill="#75856b" class="cur"/><g transform="translate(34 0)"><g style="animation:s0 16.0s linear infinite">
+<rect x="1" y="1" width="758" height="58" rx="29" fill="#ffffff" stroke="#e7e5dc" stroke-width="1.5"/><circle cx="30" cy="30" r="5" fill="#75856b" class="cur"/><g transform="translate(50 -1)"><g style="animation:s0 16.0s linear infinite">
   <g clip-path="url(#k0)"><text x="0" y="38" class="sans" font-size="21" fill="#30342f">Plan every day of the exam fortnight.</text>
   </g>
 </g><g style="opacity:0;animation:s1 16.0s linear infinite">

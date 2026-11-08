@@ -11,14 +11,14 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset=".github/assets/typing-dark.svg">
-  <img alt="Plan every day · Track every unit · Focus in deep-work blocks · Count down to every paper" src=".github/assets/typing-light.svg" width="620">
+  <img alt="Plan every day · Track every unit · Focus in deep-work blocks · Count down to every paper" src=".github/assets/typing-light.svg" width="560">
 </picture>
 
 <br><br>
 
 <a href="https://ruchirachowdary-1836.github.io/SEM-LOCKIN/"><img alt="Open the live app" src="https://img.shields.io/badge/%F0%9F%94%92%20%20Open%20the%20live%20app-ruchirachowdary--1836.github.io%2FSEM--LOCKIN-75856b?style=for-the-badge&labelColor=30342f"></a>
 
-<br><br>
+<br>
 
 <a href="https://github.com/ruchirachowdary-1836/SEM-LOCKIN/actions/workflows/deploy.yml"><img alt="Deploy status" src="https://github.com/ruchirachowdary-1836/SEM-LOCKIN/actions/workflows/deploy.yml/badge.svg"></a>
 <img alt="Next.js 15" src="https://img.shields.io/badge/Next.js-15-30342f?logo=nextdotjs&logoColor=white">
