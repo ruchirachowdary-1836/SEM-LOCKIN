@@ -10,7 +10,7 @@ const dm = DM_Sans({ subsets: ["latin"], variable: "--font-dm", display: "swap" 
 export const metadata: Metadata = {
   title: "Semester Lock-In",
   description: "Personal semester examination preparation planner — timetable, syllabus, exams and progress.",
-  icons: { icon: "/icon.svg" },
+  icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icon.svg` },
 };
 
 export const viewport: Viewport = {

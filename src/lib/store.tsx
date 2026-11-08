@@ -107,7 +107,7 @@ const StoreCtx = createContext<Ctx | null>(null);
 function notify(title: string, body: string) {
   try {
     if (typeof Notification !== "undefined" && Notification.permission === "granted") {
-      new Notification(title, { body, icon: "/icon.svg" });
+      new Notification(title, { body, icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icon.svg` });
     }
   } catch {
     /* ignore */
